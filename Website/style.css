@@ -1,0 +1,90 @@
+*{
+	margin:0;
+	padding:0;
+	font-family:century gothic ;
+}
+header{
+	background-image:url(wallbrick.jpg);
+	height:27vh;
+	background-size:cover;
+	background-position:center;
+}
+h1{
+	text-align:center;
+}
+nav{
+	float:right;
+	list-style-type:none;
+	margin-top:-60px;
+	margin-right:440px ;
+	
+}
+ul li{
+	display:inline-block;
+}
+ul li a{
+	text-decoration:none;
+	color:black;
+	padding:5px 20px ;
+	font-family:bold;
+	font-size:26px ;
+}
+article{
+	width: 50%;
+    padding-left: .5rem;
+    margin-left: .5rem;
+    float: left;
+    box-shadow: inset 0px 0 0px -0px #29627e;
+    font-style: italic;
+    color: black;
+	margin-top:30px;
+	margin-left:90px;
+}
+aside {
+    background: #eee;
+    border-radius: 1px;
+}
+
+aside p {
+    padding: 15px;
+}
+
+aside p:before {
+    content: '\201C';
+}
+
+aside p:after {
+    content: '\201D';
+}
+aside {
+	width: 25%;
+	padding-left:.5rem;
+	margin-left:.5rem;
+    float: right;
+    box-shadow: inset 0px 0 0px -0px #29627e;
+    font-style: italic;
+    color: black;
+	margin-top:30px;
+	margin-right:90px;
+}
+aside > p {
+    margin: .5rem;
+}
+aside h2{
+	text-align:center;
+	margin-left:-155px;
+	margin-top:20px;
+}
+
+p {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: white;
+    color: black;
+	margin-top:430px;
+}
