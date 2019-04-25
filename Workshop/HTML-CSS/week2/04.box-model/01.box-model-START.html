@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewpoint" content="width=device-width">
+
+	<title>The box model</title>
+
+	<style>
+
+		html {
+			box-sizing: border-box;
+
+			font-size: 20px;
+			font-family: sans-serif;
+		}
+
+		*, *::before,*::after{
+			box-sizing: inherit;
+		}
+
+		body{
+			margin: 4%;
+		}
+		section{
+			width: 100%;
+			max-width: 400px;
+			min-height: 200px;
+
+			padding: 1rem;
+			border: dashed 1rem gray;
+			margin: 0 auto 2em;
+
+			background-color: beige;
+		}
+	/*	#one{
+			width: 400px;
+			height: 280px;
+		}
+		#two{
+			width: 400px;
+			height: 200px;
+		} */
+	</style>
+</head>
+
+<body>
+
+	<section id="one">
+		<div>
+			box-sizing: <strong>content-box</strong>; <br>
+			width = 400 + 40 + 40 = 480px <br>
+			height = 200 + 40 + 40 = 280px
+		</div>
+	</section>
+
+	<section id="two">
+		<div>
+			box-sizing: <strong>border-box</strong>; <br>
+			width = 400px <br>
+			height = 200px
+		</div>
+	</section>
+
+</body>
+
+</html>

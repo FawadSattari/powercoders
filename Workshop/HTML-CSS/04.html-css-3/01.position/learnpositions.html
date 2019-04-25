@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+
+  <style>
+
+    body{
+      margin: 2em;
+    }
+
+
+    div{
+      position: absolute;
+      width: 100px;
+      height: 100px;
+
+      background: gray;
+    }
+
+    main{
+     
+      min-height: 100px;
+      background:brown;
+      position: relative;
+    }
+
+    #one{
+      
+      top: 0;
+      left: 0px;
+
+
+    }
+
+    #two{
+      
+      right: 0px;
+      top: 0;
+      /*margin-left: 400px;*/
+
+
+    }
+
+    #three{
+      left: 50%;
+      top: 50%;
+
+      transform: translate(-50%,-50%);
+    }
+
+
+  </style>
+</head>
+<body>
+  
+<main>
+  <div id="one">ITEM 1</div>
+  <div id="two">ITEM 2</div>
+  <div id="three">ITEM 3</div>
+</main>
+
+</body>
+</html>

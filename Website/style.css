@@ -5,7 +5,7 @@
 }
 header{
 	background-image:url(wallbrick.jpg);
-	height:27vh;
+	height:200px;
 	background-size:cover;
 	background-position:center;
 }
@@ -43,6 +43,7 @@ article{
 aside {
     background: #eee;
     border-radius: 1px;
+    min-height:400px;
 }
 
 aside p {
@@ -88,3 +89,5 @@ footer {
     color: black;
 	margin-top:430px;
 }
+
+/*height:27vh;*/

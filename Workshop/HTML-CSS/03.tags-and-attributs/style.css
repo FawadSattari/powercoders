@@ -1,0 +1,31 @@
+body {
+	margin: 40px;
+	color: white;
+	background: olive;
+}
+
+nav {
+	 /* a = alpha, transparence de 0 à 1 */
+	text-align: center;
+}
+
+nav ul li {
+	display: inline-block; /* bouge les menus sur l'horizontale; défaut = block*/
+}
+
+nav ul li a {
+	display: block; /* pour que le lien soit cliquable en dehors du texte; default = inline */
+	padding: 1em 2em;
+	text-transform: uppercase;
+	font-size: 1.3em;
+	font-weight: 100;
+	color: #000;
+}
+nav ul li a:hover, .active {
+	border-bottom: solid 1px #333; /* survol et menu actif */
+}
+
+footer{
+text-align: center;
+}
+
