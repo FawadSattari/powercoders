@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <header>header</header>
+  <div id="form" style="width: 500px; display: none; border: 1px solid violet;">
+    <div style="float: left; border: 3px solid yellow; height: 400px;">left</div>
+    <div style="float: right;">
+      <div style="display: block; border: 1px solid red;">top</div>
+      <div style="display: block; border: 1px solid green;">bottom</div>
+    </div>
+    <div style="clear: both; border: 1px solid blue;">
+      <button onclick="document.getElementById('form').style.display = 'none';">Cancel</button>
+    </div>
+  </div>
+  <button id="order" onclick="document.getElementById('form').style.display = 'block'; document.getElementById('order').style.visibility = '  hidden';">Order</button>
+</body>
+</html>
+

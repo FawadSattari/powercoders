@@ -3,6 +3,11 @@ alert("It works");
 
 
 
+[]=>Array()
+{}=>Object
+
+
+
 // MY TODO
 
 

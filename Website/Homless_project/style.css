@@ -1,0 +1,158 @@
+/*This is a common technique called a CSS reset. Different browsers use different default margins, causing sites to look different by margins. The * means "all elements" (a universal selector), so we are setting all elements to have zero margins, and zero padding, thus making them look the same in all browsers.*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/*SETTING THE ELEMENTS OF HEADER AND ITS BACKGROUND*/  
+header{
+  width: 100%;
+  height: 100vh; /*VH is vertical height*/
+  background-image: url(homeless_with_blanket1.jpg);
+  background-size:cover;
+  *background-repeat: no-repeat;
+  background-position: 50% center;
+  font-family: 'Dosis', sans-serif;
+}
+/*HEADER MENU TO DEFINE THE SIZE AND WIDTH OF EACH MENU*/
+.header_menu{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /*align-items is a property of display flex*/
+  *border: 1px solid red;
+  background-color: rgba(0, 0,0, .3);
+  position:sticky;
+}
+/*logo space*/
+.logo{
+  width: 20%;
+  text-align: center;
+}
+/*Img of logo*/
+.logo img{
+  height: 130px;
+}
+#logo_text {
+  position: absolute;
+  top: 45px;
+  left: 240px;
+  text-decoration: none;
+  color:yellowgreen;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.menu_list{
+  width: 80%;
+  text-align: right;
+  padding-right: 50px;
+  
+}
+.menu_list li {
+  display: inline-block;
+  text-transform: uppercase;
+  list-style: none;
+  letter-spacing: 2px;
+  padding-left: 50px;
+  font-weight: bold;
+}
+.menu_list li a {
+  color:rgba(255, 255, 255, .9);
+  text-decoration: none;
+}
+.menu_list li a:hover {
+  color:orange;
+}
+
+.langue{
+  color: orange;
+}
+
+.header_content {
+ text-transform: uppercase;
+ width: 100%; 
+ height: 200px;
+ position:absolute;
+ top: 50%;
+ left: 50%;
+ *color:rgba(255, 255, 255, .9);
+ color: white;
+ text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+ transform: translate(-50%, -50%);
+ text-align: center;
+ *border: 1px solid red;
+}
+.header_content h2{
+  margin: 50px;
+  font-size: 35px;
+  font-weight: 50;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+} 
+}
+.header_content h1{
+  margin-bottom: 50px;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+}
+
+.header_content button{
+  height: auto;
+  padding: 10px 38px;
+  color: #fff;
+  background-color: transparent;
+  font-size: 12px;
+  margin-right: 20px;
+  margin-top: 40px;
+  
+
+}
+.header_content button a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color:#fff;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+.header_content button:hover{
+  background-color:ORANGE;
+  border: 1px solid white;
+}
+.mid_body {
+  margin: auto;
+  font-size: 27px;
+  font-weight: 50;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  background:white; /* #dad9e1;*/
+  height: 5px; 
+  filter: blur(5px);
+  z-index: 2;
+  border-bottom: 6px solid white;
+}
+.div_body{
+  padding: 30% 20% 20% 20%;
+  background: white;
+  *border-top:10px solid black;
+  background-image: url(homeless_winter.jpg);
+  background-size: cover;
+
+}
+.body-text{
+  
+
+  text-transform: uppercase;
+  
+  
+  position: relative;
+  font-size: 25px;
+  color: white;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  
+  text-align: center;
+  
+}
+  /*transform: translate(-50%, -50%);*/

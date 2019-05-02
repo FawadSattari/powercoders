@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>todoApp-8</title>
+</head>
+<body>
+
+  <p>
+ <!--<input type="text">
+  <input type="button" value="Search" oneclick="search()"><br>-->
+  <button onclick="todoList.displayTodos()">Display Todos</button>
+  <button onclick="todoList.toggleAll()">Toggle All Todos</button>
+
+ </p>
+
+<p>
+  <input type="text" name="" id="addTodoInput" placeholder="Text ...">
+  <button onclick="handlers.addTodo()">Add Todo</button>
+</p>
+<p>
+    <input type="number" min="0" name="" id="changeTodoIndexInput" placeholder="Index ...">
+    <input type="text" name="" id="changeTodoInput" placeholder="Text ...">
+    <button>Change Todo</button>
+</p>
+    <p>
+    <input type="number" min="0" name="" id="deleteTodoIndexInput" placeholder="Index ...">
+    <button>Delete Todo</button>
+
+  </p>
+  <p>
+      <input type="number" min="0" name="" id="toggleTodoIndexInput" placeholder="Index ...">
+      <button>Toggle Todo</button>
+  </p>
+  <script src="script.js"></script>
+</body>
+</html>

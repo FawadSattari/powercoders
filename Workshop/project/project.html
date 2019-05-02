@@ -12,7 +12,7 @@
 
     nav {
       width: 100%;
-      max-width: 500px;
+      max-width: 700px;
       text-transform: none;
       margin: auto;
       position: sticky;
@@ -21,7 +21,7 @@
     nav ul {
       list-style: none;
       margin: 0;
-      padding: 0;
+      padding: 0px;
       display: flex;
       justify-content: space-between;
       font-weight: bold;
@@ -29,7 +29,7 @@
       }
 
       nav li{
-     padding:2px;
+     padding:1px;
 
       }
 
@@ -94,6 +94,26 @@ header {
   display: block;
 }
 
+/* Changing the a Href and giving the hover color for nav*/
+
+a:hover , a:active{
+
+background-color:darkgrey;
+}
+
+/* Asigning the border for nav */
+
+a:link,a:visited{
+
+
+text-align: center;
+padding: 4px;
+border-radius: 5px;
+
+}
+
+
+/* Styling the Contact ....*/
 
 .contact{
 
@@ -101,11 +121,15 @@ header {
   float: right;
   top:0px;
   right: 0px;
+  padding-top: 20px;
 }
   .contactstyle{
     padding:2px 2px 2px 2px ;
     border-radius:10px;
+    background: transparent;
     color:black;
+    text-align: center;
+    box-shadow:10px 10px 5px gray ;
 
   }
  
@@ -161,13 +185,21 @@ header {
     color:red;
   }
   footer{
+    
     text-align:center;
+    /*position: fixed;
+    bottom: 50px;
+    width: 100%;*/
   }
   hr{
     width:50%;
   }
   h5{
+    
     text-align:center;
+    /*position: fixed;
+    bottom: 10px;
+    width:100%;*/
   }
   
   </Style>
@@ -196,9 +228,9 @@ header {
             <li class="menurelative"><a href="#">Lunch</a>
             <div class="menu">
               <ul class="submenu">
-                  <li><a href="">A</a></li>
-                  <li><a href="">B</a></li>
-                  <li><a href="">C</a></li>
+                  <li><a href="">Chicken and Red Plum Salad</a></li>
+                  <li><a href="">Roasted Cauliflower Salad</a></li>
+                  <li><a href="">Summer Pesto Pasta</a></li>
 
 
               </ul>
@@ -210,9 +242,9 @@ header {
             <li class="menurelative"><a href="#">Dinner</a>
               <div class="menu">
                 <ul class="submenu">
-                    <li><a href="">A</a></li>
-                    <li><a href="">B</a></li>
-                    <li><a href="">C</a></li>
+                    <li><a href="">Baked Garlic Butter Salmon</a></li>
+                    <li><a href="">Chicken Taco Avocados</a></li>
+                    <li><a href="">Vegan Pizza</a></li>
   
   
                 </ul>
@@ -248,9 +280,9 @@ header {
 
   </header>
 
-            <form class="contact" action="">
-              <input class="contactstyle" type="Submit" value="Don't forget to contact Us ">
-            </form>
+            <div class="contact">
+              <a class="contactstyle" href="" value="Don't forget to contact Us ">Don't forget to contact Us</a>
+            </div>
 
      
       
@@ -301,13 +333,17 @@ header {
       <textarea name="" id="" cols="30" rows="1" placeholder="Atleast it should be 25 letters" style="text-align:center" maxlength="30"></textarea><br><br>
       Are you satisfied for having lucnh with POWERCODERS ? * <br>
     
-      Yes <input type="radio" name="panda" required>
-      No  <input type="radio" name="panda" required><br>
-     <!-- Domestic<input type="checkbox">Wild <input type="checkbox"> <br>-->
+      Yes <input type="radio" name="satisfied" required>
+      No  <input type="radio" name="satisfied" required><br>
+
+
+    
     
       <input class="submit" type="submit" value="Submit">
     
     </form>
+
+  
     <br>
 <hr>
 <footer>This form was created by Fawad ©POWERCODERS  Report Abuse - Terms of Service </footer>
