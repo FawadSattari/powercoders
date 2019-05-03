@@ -137,7 +137,28 @@ var todoList = {
 };
 
 
+var view={
+	displayTodos:function(){
+		const todoUL= document.querySelector("ul");
+		todoUL.innerHTML=" ";
+		//start loop
+		for(let i=0; i < todoList.todos.length ;i++){
+			let todo=todoList.todos[i];
+			let x=" ( ) ";
+			if(todo.completed===true){
+				x=" ( ) ";
+			}//put  together completed state and the text
+			let displayTodoItem = x + todo.todoText;
+			console.log(displayTodoItem);
+			let todoLi=document.createElement("li");
+			todoLi.textContent=displayTodoItem;
+			//Append the Li to your list
+			todoUL.appendChild(todoLi);
+		}//end loop
+	}
 
+};
+view.displayTodos();
 
 
 

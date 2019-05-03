@@ -32,8 +32,10 @@ header{
 }
 /*Img of logo*/
 .logo img{
-  height: 130px;
+  height: 80px;
+  
 }
+
 #logo_text {
   position: absolute;
   top: 45px;
@@ -57,12 +59,19 @@ header{
   padding-left: 50px;
   font-weight: bold;
 }
+
+.menu_list li a.selected{
+  text-decoration: underline;
+  color: orange;
+}
+
 .menu_list li a {
   color:rgba(255, 255, 255, .9);
   text-decoration: none;
 }
 .menu_list li a:hover {
   color:orange;
+  text-decoration: underline;
 }
 
 .langue{
@@ -71,21 +80,24 @@ header{
 
 .header_content {
  text-transform: uppercase;
- width: 100%; 
- height: 200px;
+ *height: 350px;
  position:absolute;
- top: 50%;
- left: 50%;
- *color:rgba(255, 255, 255, .9);
+ top: 60%;
+ left:50%;
+
+ border-radius: 5px;
  color: white;
  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
  transform: translate(-50%, -50%);
  text-align: center;
- *border: 1px solid red;
+ position: center;
+ width: auto;
+ background: rgba(52, 27, 43, 0.5);
+ filter: blur(0.5px);
 }
 .header_content h2{
   margin: 50px;
-  font-size: 35px;
+  font-size: 25px;
   font-weight: 50;
   font-weight: bold;
   letter-spacing: 0.1em;
@@ -104,10 +116,7 @@ header{
   color: #fff;
   background-color: transparent;
   font-size: 12px;
-  margin-right: 20px;
-  margin-top: 40px;
-  
-
+  margin: 40px 20px;
 }
 .header_content button a{
   text-decoration: none;
@@ -155,4 +164,4 @@ header{
   text-align: center;
   
 }
-  /*transform: translate(-50%, -50%);*/
+ 

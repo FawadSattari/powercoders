@@ -4,11 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>todoApp-8</title>
+  <title>todoApp html-css-js</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<main>
 
-  <p>
+  <h1>Todo List App</h1>
+  <h2>Using vanilla Javascript to create stuff</h2>
+
+  <ul></ul>
+  
+  <p class="row">
  <!--<input type="text">
   <input type="button" value="Search" oneclick="search()"><br>-->
   <button onclick="todoList.displayTodos()">Display Todos</button>
@@ -16,14 +23,14 @@
 
  </p>
 
-<p>
+<p class="row">
   <input type="text" name="" id="addTodoInput" placeholder="Text ...">
   <button onclick="handlers.addTodo()">Add Todo</button>
 </p>
 
 
 
-<p>
+<p class="row">
     <input type="number" min="0" name="" id="changeTodoIndexInput" placeholder="Index ...">
     <input type="text" name="" id="changeTodoInput" placeholder="Text ...">
     <button onclick="handlers.changeTodo()">Change Todo</button>
@@ -31,15 +38,17 @@
 
 
 
-    <p>
+    <p class="row">
     <input type="number" min="0" name="" id="deleteTodoIndexInput" placeholder="Index ...">
     <button onclick="handlers.deleteTodo()">Delete Todo</button>
 
   </p>
-  <p>
+  <p class="row">
       <input type="number" min="0" name="" id="toggleTodoIndexInput" placeholder="Index ...">
       <button onclick="handlers.toggleCompleted()">Toggle Todo</button>
   </p>
+
+</main>
   <script src="script.js"></script>
 </body>
 </html>
