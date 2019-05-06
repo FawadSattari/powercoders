@@ -18,6 +18,10 @@ var todoList = {
 		{
 			todoText: "Item 3",
 			completed: false
+		},
+		{
+			todoText: "Item 4",
+			completed: true
 		}
 	],
 
@@ -161,6 +165,19 @@ var view={
 view.displayTodos();
 
 
+
+
+// 1. Create the element
+let section = document.createElement("section");
+//1.1 Some content...
+let sectionContent= "some content";
+//1.2 Put the content inside the section
+section.textContent=sectionContent;
+//2.The tartget element
+const mainElem = document.querySelector("main");
+
+//3.Append child
+mainElem.appendChild(section);
 
 
 /*
