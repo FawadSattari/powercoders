@@ -8,7 +8,7 @@
 header{
   width: 100%;
   height: 100vh; /*VH is vertical height*/
-  background-image: url(homeless_with_blanket1.jpg);
+  background-image: url(../img/homeless_with_blanket.jpg);
   background-size:cover;
   *background-repeat: no-repeat;
   background-position: 50% center;
@@ -138,7 +138,7 @@ header{
   padding: 30% 20% 20% 20%;
   background: white;
   *border-top:10px solid black;
-  background-image: url(homeless_winter.jpg);
+  background-image: url(../img/homeless_winter.jpg);
   background-size: cover;
 
 }

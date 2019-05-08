@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>jQuery intro</title>
+</head>
+<body>
+
+  <h1>jQuery intro</h1>
+  <p><button id="click">Click Me</button></p>
+  <p><button id="remove">Remove Me</button></p>
+  <script src="js/jquery-3.4.1.slim.min.js"></script>
+  <script>
+  $(function() {
+
+    $("#click").on('click',function(){
+      $("body").addClass("bob-is-great");
+
+    });
+
+    $("#remove").on('click',function(){
+      $("body").addClass("Remove it");
+
+    });
+
+
+    
+  })
+  </script>
+</body>
+</html>
