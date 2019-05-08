@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <Style>
+
+  
+    
+  
+
+    nav {
+      width: 100%;
+      max-width: 700px;
+      text-transform: none;
+      margin: auto;
+      position: sticky;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0px;
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+      
+      }
+
+      nav li{
+     padding:1px;
+
+      }
+
+      a{
+        text-decoration: none;
+        color: black;
+
+  
+      }
+      a:hover{
+        text-decoration: none ;
+        color: crimson;
+        
+      }
+
+
+
+body {
+  color:black;
+  /*text-transform: uppercase;*/
+  letter-spacing: 3px;
+  background-image: url("#")
+}
+header {
+  padding: 10px;
+  clear:both;
+  background:white;
+  position: sticky;
+  top: 0px;
+  
+}
+
+
+/*Relative and absolute*/
+
+.menurelative{
+  display: inline-flex;
+}
+
+.menu{
+  position: absolute;
+  display: none;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.menurelative:hover .menu {
+  display: inline-block;
+  margin-top: 20px;
+  text-align: center;
+
+}
+
+.menu li {
+  width: 100%;
+}
+
+.submenu {
+  display: block;
+}
+
+/* Changing the a Href and giving the hover color for nav*/
+
+a:hover , a:active{
+
+background-color:darkgrey;
+}
+
+/* Asigning the border for nav */
+
+a:link,a:visited{
+
+
+text-align: center;
+padding: 4px;
+border-radius: 5px;
+
+}
+
+
+/* Styling the Contact ....*/
+
+.contact{
+
+  clear:both;
+  float: right;
+  top:0px;
+  right: 0px;
+  padding-top: 20px;
+}
+  .contactstyle{
+    padding:2px 2px 2px 2px ;
+    border-radius:10px;
+    background: transparent;
+    color:black;
+    text-align: center;
+    box-shadow:10px 10px 5px gray ;
+
+  }
+ 
+  .submit{
+    background:transparent;
+    background-color:black;
+    padding:2px 2px 2px 2px ;
+    border-radius:5px;
+    color:white;
+  }
+  html{
+    font-size:16px;
+  }
+  .code{
+    text-align:center;
+  }
+  .name{
+    text-align:center;
+    background:transparent;
+    border:transparent;
+    border-bottom:0.5px solid red;
+    font-size:20px;
+    width:80%;
+    margin:auto;
+    display:block;
+  }
+  .myform{
+    width:40%;
+    margin:auto;
+    border:1px solid black ;
+    border-radius:10px;
+    box-shadow:10px 10px 5px gray ;
+    padding:20px 20px 20px 20px;
+    background-color:white;
+  }
+  h1{
+    padding : 20px 100px 0;
+    text-align:center;
+  }
+  h4{
+    color:red;
+  }
+  .backgroundname{
+  
+    background-color: #f5f5f5;;
+    padding:20px 20px 20px 20px;
+    border-radius:5px;
+  }
+  h3{
+    margin:0px;
+  }
+  .starred{
+    color:red;
+  }
+  footer{
+    
+    text-align:center;
+    /*position: fixed;
+    bottom: 50px;
+    width: 100%;*/
+  }
+  hr{
+    width:50%;
+  }
+  h5{
+    
+    text-align:center;
+    /*position: fixed;
+    bottom: 10px;
+    width:100%;*/
+  }
+  
+  </Style>
+  <title>@Fawad-Resturant</title>
+  
+</head>
+<body>
+  <header>
+
+      
+    <nav >
+          <ul>
+            <!--BREAKFAST-->
+            <li class="menurelative"><a href="#">Breakfast</a> 
+              <div class="menu">
+              <ul class="submenu">
+              <li><a href="">Avocade Toast with egg</a></li>
+              <li><a href="">Sweet potato and black bean</a></li>
+              <li><a href="">Southwest tofu scramble</a></li>
+      
+
+              </ul>
+              </div>
+            </li>
+              <!--LUNCH-->
+            <li class="menurelative"><a href="#">Lunch</a>
+            <div class="menu">
+              <ul class="submenu">
+                  <li><a href="">Chicken and Red Plum Salad</a></li>
+                  <li><a href="">Roasted Cauliflower Salad</a></li>
+                  <li><a href="">Summer Pesto Pasta</a></li>
+
+
+              </ul>
+            </div>
+            </li>
+
+
+            <!--dinner-->
+            <li class="menurelative"><a href="#">Dinner</a>
+              <div class="menu">
+                <ul class="submenu">
+                    <li><a href="">Baked Garlic Butter Salmon</a></li>
+                    <li><a href="">Chicken Taco Avocados</a></li>
+                    <li><a href="">Vegan Pizza</a></li>
+  
+  
+                </ul>
+              </div>
+              </li>
+            <!--DESSERT-->
+                <li class="menurelative"><a href="#">Dessert</a>
+                  <div class="menu">
+                    <ul class="submenu">
+                        <li><a href="">A</a></li>
+                        <li><a href="">B</a></li>
+                        <li><a href="">C</a></li>
+      
+      
+                    </ul>
+                  </div>
+               </li>
+
+            <!--TAKE AWAY-->
+            <li class="menurelative"><a href="#">TakeAway</a>
+              <div class="menu">
+                <ul class="submenu">
+                    <li><a href="">A</a></li>
+                    <li><a href="">B</a></li>
+                    <li><a href="">C</a></li>
+  
+  
+                </ul>
+              </div>
+              </li>
+          </ul>
+    </nav>
+
+  </header>
+
+            <div class="contact">
+              <a class="contactstyle" href="" value="Don't forget to contact Us ">Don't forget to contact Us</a>
+            </div>
+
+     
+      
+
+
+
+
+
+      <h1>Chicken and Red Plum Salad</h1>
+      <form action="" class="myform">
+        <h4> * Required</h4><br>
+      <div class="backgroundname">
+      <h3>Name : <span class="starred">*</span></h3><br>
+        <input class="name" type="text" placeholder="Write Here your NAME" required><br>
+      This is required questions 
+      </div>
+    
+    <br>
+      <h3>Size of the sandwiches <span class="starred">*</span></h3>
+      <input type="radio" name="size" required>Medium<br>
+      <input type="radio" name="size"required>Big<br><br>
+      <h3>Basis <span class="starred">*</span></h3>
+      <input type="radio" name="basis" required>Curry chicken, salad, tomato<br>
+      <input type="radio" name="basis" required>Cheese, salad, tomato, gherkin<br>
+      <input type="radio" name="basis" required>Tuna, salad, tomato, cucumber<br><br>
+      <h3>Sauce <span class="starred">*</span></h3>
+      <input type="radio" name="sauce" required>Butter and mustard<br>
+      <input type="radio" name="sauce" required>Mayonnaise<br>
+      <input type="radio" name="sauce" required>Without sauce<br><br>
+      
+      <h3>Dessert <span class="starred">*</span> </h3>
+      <input type="radio" name="dessert" required>Chocolate brown softness<br>
+      <input type="radio" name="dessert" required>Cake carrot and almonds<br><br>
+      
+      <h3>Drinks <span class="starred">*</span></h3>
+      <input type="radio" name="drink" required>Coke<br>
+      <input type="radio" name="drink" required>Coke Zero<br>
+      <input type="radio" name="drink" required>Evain Water<br>
+      <input type="radio" name="drink" required>Lemon romanette<br>
+      <input type="radio" name="drink" required>Grapefruit romanette<br>
+      <input type="radio" name="drink" required>None<br><br>
+      
+        
+      <h3>Hidden Code <span class="starred">*</span></h3>
+     <input class="code" type="password" placeholder="Type here CODE" required>
+      <br><br>
+     <h3> Your comments :</h3>
+      <textarea name="" id="" cols="30" rows="1" placeholder="Atleast it should be 25 letters" style="text-align:center" maxlength="30"></textarea><br><br>
+      Are you satisfied for having lucnh with POWERCODERS ? * <br>
+    
+      Yes <input type="radio" name="satisfied" required>
+      No  <input type="radio" name="satisfied" required><br>
+
+
+    
+    
+      <input class="submit" type="submit" value="Submit">
+    
+    </form>
+
+  
+    <br>
+<hr>
+<footer>This form was created by Fawad ©POWERCODERS  Report Abuse - Terms of Service </footer>
+<h5>HTML/CSS</h5>
+
+    
+   
+  
+</body>
+</html>

@@ -169,15 +169,54 @@ view.displayTodos();
 
 // 1. Create the element
 let section = document.createElement("section");
+section.setAttribute('id','my-section');
+section.setAttribute('class','section');
 //1.1 Some content...
-let sectionContent= "some content";
+let sectionContent= "";
+sectionContent+="<h1>Section Title</h1>";
+sectionContent+='<div id ="top">';
+sectionContent+="DIV top Content...";
+sectionContent+="</div>";
+
+sectionContent+='<div id ="bottom">';
+sectionContent+="DIV bottom Content...";
+sectionContent+="</div>";
+
+
+section.innerHTML=sectionContent;
+
+
+
+
 //1.2 Put the content inside the section
-section.textContent=sectionContent;
+//section.textContent=sectionContent;
 //2.The tartget element
 const mainElem = document.querySelector("main");
 
 //3.Append child
 mainElem.appendChild(section);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*
@@ -193,30 +232,6 @@ toggleAllBtn.addEventListener("click",function(){
 });
 
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

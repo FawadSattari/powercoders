@@ -13,17 +13,19 @@ header{
   *background-repeat: no-repeat;
   background-position: 50% center;
   font-family: 'Dosis', sans-serif;
+  margin-top: -80px;
 }
 /*HEADER MENU TO DEFINE THE SIZE AND WIDTH OF EACH MENU*/
 .header_menu{
   width: 100%;
-  height: 100px;
+  height: 80px;
   display: flex;
   flex-direction: row;
   align-items: center; /*align-items is a property of display flex*/
   *border: 1px solid red;
   background-color: rgba(0, 0,0, .3);
   position:sticky;
+  top:0;
 }
 /*logo space*/
 .logo{
@@ -38,7 +40,7 @@ header{
 
 #logo_text {
   position: absolute;
-  top: 45px;
+  top: 25px;
   left: 240px;
   text-decoration: none;
   color:yellowgreen;
@@ -80,7 +82,6 @@ header{
 
 .header_content {
  text-transform: uppercase;
- *height: 350px;
  position:absolute;
  top: 60%;
  left:50%;
@@ -97,16 +98,11 @@ header{
 }
 .header_content h2{
   margin: 50px;
-  font-size: 25px;
-  font-weight: 50;
-  font-weight: bold;
   letter-spacing: 0.1em;
 } 
 }
 .header_content h1{
   margin-bottom: 50px;
-  font-size: 22px;
-  font-weight: 600;
   letter-spacing: 0.3em;
 }
 
@@ -131,10 +127,6 @@ header{
 }
 .mid_body {
   margin: auto;
-  font-size: 27px;
-  font-weight: 50;
-  font-weight: bold;
-  text-transform: uppercase;
   text-align: center;
   background:white; /* #dad9e1;*/
   height: 5px; 
@@ -154,14 +146,13 @@ header{
   
 
   text-transform: uppercase;
-  
-  
   position: relative;
   font-size: 25px;
   color: white;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-  
   text-align: center;
   
 }
  
+
+
